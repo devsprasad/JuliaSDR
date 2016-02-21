@@ -1,13 +1,15 @@
-# module modulename
+module modem
 
-# # using #dependencies
 
-# # import #methods to overload
+export pskmodem,
+		display,
+		getbps,
+		destroy,
+		modulate,
+		demodulate
 
-# # export #types/methods to export
-
-#  #module body
-#  #
+ #module body
+ #
 
 
 function pskmodem(M::Int)
@@ -59,4 +61,4 @@ function demodulate(modem::Ptr{Void}, mods::Array{Complex64})
 	return y;
 end
 
-# end
+end
